@@ -51,15 +51,20 @@ public class main {
         relationship[] relObject;
         relObject = new relationship[5];
 
-        relObject[0] = new relationship("hates");
+        relObject[0] = new relationship(null);
+        relObject[0].status = "hates";
 
-        relObject[1] = new relationship("loves");
+        relObject[1] = new relationship(null);
+        relObject[0].status = "loves";
 
-        relObject[2] = new relationship("is indifferent to");
+        relObject[2] = new relationship(null);
+        relObject[0].status = "is indifferent to";
 
-        relObject[3] = new relationship("is angry with");
+        relObject[3] = new relationship(null);
+        relObject[0].status = "is angry with";
 
-        relObject[4] = new relationship("is apologetic to");
+        relObject[4] = new relationship(null);
+        relObject[0].status = "is apologetic to";
 
         return relObject[(int)(Math.random()*5)].status;
     }
