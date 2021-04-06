@@ -1,3 +1,6 @@
 public class relationship {
-    String status = new String();
+    String status;
+    public relationship (String status){
+        this.status = status;
+    }
 }

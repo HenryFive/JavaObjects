@@ -1,3 +1,6 @@
 public class boy {
-    String name = new String();
+    String name;
+    public boy(String name){
+      this.name = name ;
+    }
 }

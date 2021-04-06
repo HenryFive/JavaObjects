@@ -1,3 +1,6 @@
 public class girl {
-    String name = new String();
+    String name;
+    public girl (String name){
+         this.name = name;
+    }
 }
