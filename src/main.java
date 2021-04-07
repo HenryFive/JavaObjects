@@ -1,3 +1,7 @@
+import classes.boy;
+import classes.girl;
+import classes.relationship;
+
 import java.util.Random;
 public class main {
 
@@ -11,39 +15,48 @@ public class main {
 
     public static String RandomBoyName(){
 
-        boy[] boyObject;
-        boyObject = new boy[5];
+        boy[] boyObject = new boy[5];
 
-        boyObject[0] = new boy("Rey");
+        boyObject[0] = new boy();
+        boyObject[0].setName("Rey");
 
-        boyObject[1] = new boy("Aron");
+        boyObject[1] = new boy();
+        boyObject[1].setName("Aron");
 
-        boyObject[2] = new boy("Mike");
+        boyObject[2] = new boy();
+        boyObject[2].setName("Mike");
 
-        boyObject[3] = new boy("Steve");
+        boyObject[3] = new boy();
+        boyObject[3].setName("Steve");
 
-        boyObject[4] = new boy("John");
+        boyObject[4] = new boy();
+        boyObject[4].setName("John");
 
-
-        return boyObject[rand.nextInt(5)].name;
+        return boyObject[rand.nextInt(5)].getName();
 
     }
 
     public static String generateGirlName(){
+
         girl[] girlObject;
         girlObject = new girl[5];
 
-        girlObject[0] = new girl("Olivia");
+        girlObject[0] = new girl();
+        girlObject[0].setName("Olivia");
 
-        girlObject[1] = new girl("Emma");
+        girlObject[1] = new girl();
+        girlObject[1].setName("Emma");
 
-        girlObject[2] = new girl("Ava");
+        girlObject[2] = new girl();
+        girlObject[2].setName("Ava");
 
-        girlObject[3] = new girl("Sophia");
+        girlObject[3] = new girl();
+        girlObject[3].setName("Sophia");
 
-        girlObject[4] = new girl("Isabella");
+        girlObject[4] = new girl();
+        girlObject[4].setName("Isabella");
 
-        return girlObject[rand.nextInt(5)].name;
+        return girlObject[rand.nextInt(5)].getName();
     }
 
     static String generateRelationships()
@@ -51,21 +64,21 @@ public class main {
         relationship[] relObject;
         relObject = new relationship[5];
 
-        relObject[0] = new relationship(null);
-        relObject[0].status = "hates";
+        relObject[0] = new relationship();
+        relObject[0].setStatus("hates");
 
-        relObject[1] = new relationship(null);
-        relObject[0].status = "loves";
+        relObject[1] = new relationship();
+        relObject[1].setStatus("loves");
 
-        relObject[2] = new relationship(null);
-        relObject[0].status = "is indifferent to";
+        relObject[2] = new relationship();
+        relObject[2].setStatus("is indifferent to");
 
-        relObject[3] = new relationship(null);
-        relObject[0].status = "is angry with";
+        relObject[3] = new relationship();
+        relObject[3].setStatus("is angry with");
 
-        relObject[4] = new relationship(null);
-        relObject[0].status = "is apologetic to";
+        relObject[4] = new relationship();
+        relObject[4] .setStatus("is apologetic to");
 
-        return relObject[(int)(Math.random()*5)].status;
+        return relObject[(int)(Math.random()*5)].getStatus();
     }
 }
