@@ -1,6 +1,7 @@
 import classes.boy;
 import classes.girl;
 import classes.relationship;
+import StudentClass.Student;
 
 import java.util.Random;
 public class main {
@@ -8,6 +9,12 @@ public class main {
     static Random rand = new Random();
 
     public static void main(String args[]){
+
+        Student studyante = new Student();
+
+        studyante.setter("Clark", 123, "1st Semester");
+
+        System.out.println(studyante.get());
 
         System.out.println(RandomBoyName()+" "+generateRelationships()+" "+generateGirlName());
 
