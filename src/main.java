@@ -10,13 +10,21 @@ public class main {
 
     public static void main(String args[]){
 
-        Student studyante = new Student();
+        Student[] studyante = new Student[3];
 
-        studyante.setter("Clark", 123, "1st Semester");
+        studyante[0] = new Student();
+        studyante[0].setter("Clark", 123, "1st Semester");
+        System.out.println(studyante[0].get());
 
-        System.out.println(studyante.get());
+        studyante[1] = new Student();
+        studyante[1].setter("Bruce", 224, "2nd Semester");
+        System.out.println(studyante[1].get());
 
-        System.out.println(RandomBoyName()+" "+generateRelationships()+" "+generateGirlName());
+        studyante[2] = new Student();
+        studyante[2].setter("Peter", 325, "3rd Semester");
+        System.out.println(studyante[2].get());
+
+        System.out.println("\n"+RandomBoyName()+" "+generateRelationships()+" "+generateGirlName());
 
     }
 
